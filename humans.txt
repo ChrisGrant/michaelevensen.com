@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Michael Nino Evensen -- Lead Product Designer -- @michaelnevensen
+
+# THANKS
+
+    Kasper Lahti, Amir Shaikh, Eric Wahlforss, Aurelie, Sarah, Vincent, Michael, Jon, Robb, Jan + the rest of the engineering team and the amazing SoundCloud Design Team.
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
