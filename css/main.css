@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html,
-button,
+button,f
 input,
 select,
 textarea {
@@ -36,7 +36,7 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #b3d4c;
     text-shadow: none;
 }
 
@@ -315,7 +315,7 @@ p {
     text-align: center;
     background-color: #fff;
     width: 250px;
-    padding: 4em 1em 4em 1em;
+    padding: 3em 1em 2em 1em;
     margin: 1.8em;
     font-family: "metric",sans-serif;
     /*font-style: normal;*/
@@ -326,20 +326,21 @@ p {
 .facts .numbers {
     font-size: 4em;
     color: #000;
-    margin-bottom: -1em;
-    padding-bottom: -1em;
 }
 
 .box {
     display: block;
     width: 100%;
-    height: 200px;
-    padding: 20px 0;
+    height: 300px;
     text-align: center;
 }
 
 .box:not(:last-child) {
     border-bottom: 1px solid #E7E7E7;
+}
+
+.box img {
+    padding-bottom: 3em;
 }
 
 .left {
