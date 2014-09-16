@@ -24,6 +24,7 @@ html {
     font-family: "lemonde-journal",serif;
     font-style: normal;
     font-weight: 400;
+
     font-size: 1.5em;
     line-height: 2em;
     color: #464646;
@@ -296,11 +297,6 @@ p {
     font-size: 3.35em;
     margin: 0em 0em 0.2em 0em;
     line-height: 1em;
-
-    /*color: #000;
-    font-size: 4.3em;
-    margin: 0em 0em 0.2em 0em;
-    line-height: 1em;*/
 }
 
 .small-quote {
@@ -310,22 +306,37 @@ p {
     line-height: 1.2em;
 }
 
+.author {
+    display: block;
+    font-family: "metric-regular",sans-serif;
+    /*font-style: normal;*/
+    font-weight: 600;
+    color: #B2B2B2;
+    font-size: 1.25em;
+}
+
 /* Facts in Text */
 .facts {
     text-align: center;
     background-color: #fff;
     width: 250px;
-    padding: 3em 1em 2em 1em;
-    margin: 1.8em;
+    padding: 1.4em;
+    margin: 2.8em;
     font-family: "metric",sans-serif;
-    /*font-style: normal;*/
     font-weight: 600;
     color: #B2B2B2;
 }
 
 .facts .numbers {
+    display: block;
     font-size: 4em;
+    margin-bottom: -0.05em;
     color: #000;
+}
+
+.facts .text {
+    display: block;
+    text-align: center;
 }
 
 .box {
@@ -333,6 +344,7 @@ p {
     width: 100%;
     height: 300px;
     text-align: center;
+    padding-top: 2.4em;
 }
 
 .box:not(:last-child) {
@@ -343,21 +355,35 @@ p {
     padding-bottom: 3em;
 }
 
+/* Quote in Text */
+.quote-text {
+    text-align: center;
+    background-color: #fff;
+    width: 300px;
+    padding: 1.9em 1.6em;
+    margin: 1.25em 2em;
+    font-family: "metric-bold",sans-serif;
+    /*font-style: normal;*/
+    font-weight: 600;
+    color: #000;
+    font-size: 1.8em;
+    line-height: 1.2em;
+}
+
+.quote-text-author {
+    display: block;
+    color: #B2B2B2;
+    font-size: 0.6em;
+}
+
 .left {
     float: left;
+    margin-left: 0em;
 }
 
 .right {
     float: right;
-}
-
-.author {
-    display: block;
-    font-family: "metric-regular",sans-serif;
-    /*font-style: normal;*/
-    font-weight: 600;
-    color: #B2B2B2;
-    font-size: 1.25em;
+    margin-right: 0em;
 }
 
 /* ==========================================================================
