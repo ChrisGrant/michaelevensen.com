@@ -108,28 +108,70 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header {
+
+    /*background-color: #ffe500;*/
+    /*height: 158px;*/
+
+    max-width: 1170px;
+    margin: 0 auto;
+
+    color: #000;
+    font-family: "Metric";
+    font-weight: 400;
+    font-size: 25px;
+
+    padding: 80px 134px;
+    line-height: 1.1;
+
+    /*text-align: center;*/
+}
+header:after {
+    content: ' ';
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 26px 0px;
+}
+
 
 .cover {
     width: 100%;
     height: 1028px;
-    background: url(/img/Front-Comp@2x.png);
+    background: url(/img/cover14.png) no-repeat;
     background-color: #D8D8D8;
-    background-size: cover;
+    background-position: center;
+    background-size: fill;
     display: inline-block;
     /*position: absolute;*/
     top: 0;
     left: 0;   
 }
 
-/*.story {
+.story {
     width: 100%;
-    max-width: 1170px;
+    max-width: 900px;
     margin: 0 auto;
+    font-size: 25px;
+    line-height: 1.8;
+
+    color: #515151;
 
     box-sizing: border-box;
-    padding: 0em 6.6em 0em 6.6em;
+    /*padding: 0em 6.6em 0em 6.6em;*/
 }
-*/
+
+.story a {
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: #000 1px solid;
+    /*border-spacing: 12px 12px;*/
+    color: #333;
+}
+
+.story a:hover {
+    border: none;
+    color: #000;
+}
 
 .article-intro {
     margin: 0 auto;
@@ -139,7 +181,7 @@ textarea {
 
 
 /* ==========================================================================
-   Button
+   Buttons, Menu's and Links
    ========================================================================== */
 
 a.button {
@@ -148,7 +190,6 @@ a.button {
     font-family: "Metric";
     font-weight: 400;
     font-size: 25px;
-    /*border: #acacac 1px solid;*/
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     padding: 27px 42px 22px 43px;
@@ -163,10 +204,23 @@ a.button {
 }
 
 a.button:hover {
-    /*background-color: #fff;*/
+    background-color: #fff;
     color: #000;
-    border-color: #565656;
+    border: 1px solid rgba(0, 0, 0, 0.4);
 }
+
+a.menu-button {
+
+    color: #373737;
+    float: right;
+    text-decoration: none;
+}
+
+/*a.menu-button:after {
+
+    content: '\a0\a0\a0▼';
+    font-size: 12px;  
+}*/
 
 
 /* ==========================================================================
@@ -222,7 +276,6 @@ h3:after {
     padding: 26px 0px;
 }
 
-
 .center {
     text-align: center;
 }
@@ -241,11 +294,11 @@ p.intro {
 }
 
 .dot:before {
-    content: '\a0\a0';
+    content: '\a0';
 }
 
 .dot:after {
-    content: '\a0\a0';
+    content: '\a0\a0\a0';
 }
 
 .center {
@@ -258,13 +311,13 @@ p.intro {
 
 .articles {
     padding: 20px 130px;
-
 }
 
 article {
     text-align: left;
-    max-width: 1170px;
+    /*max-width: 1170px;*/
     border-bottom: 1px solid #D8D8D8;
+    
     padding: 0px 100px 124px 70px; 
     margin: 100px 0;
 }
