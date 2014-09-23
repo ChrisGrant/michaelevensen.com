@@ -19,14 +19,16 @@ textarea {
 }
 
 html {
-    background-color: #EDF9FE;
-
+    /*background-color: #fff;*/
+/*    background-color: #E0DEDA;
+*/
     font-family: "lemonde-journal",serif;
     font-style: normal;
     font-weight: 400;
 
     font-size: 1.5em;
-    line-height: 2em;
+    line-height: 2;
+    
     color: #464646;
 }
 
@@ -123,13 +125,18 @@ footer {
     border-bottom: #000 1px solid;
 }
 
+.cover {
+
+    padding: 6em 0em 2em 0em;
+}
+
 .story {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
 
     box-sizing: border-box;
-    padding: 3.5em 6.6em 3.5em 6.6em;
+    padding: 0em 6.6em 0em 6.6em;
 }
 
 body {
@@ -144,20 +151,30 @@ body {
 
     list-style: none;
 
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
+    /*display: -webkit-flex;*/
+    /*flex-flow: row;*/
+    /*justify-content: center;*/
+    align-items: center;
 
-background-color: #fff;
-    width: 100%;
 
+    background-color: #fff;
+    /*background: #fe0;*/
+    /*width: 100%;*/
+    max-width: 1050px;
+    font-size: 0;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .main-experiences li {
+    font-size: 25px;
+    vertical-align: top;
 
-    
+    /*-webkit-flex: 1;*/
     width: 350px;
-    height: 350px;
+    min-height: 350px;
+    box-sizing: border-box;
+    display: inline-block;
 
     text-align: center;
 
@@ -206,7 +223,7 @@ a, a:visited {
 }
 
 a:hover, a:active {
-    color: #FF5500;
+    color: #fff;
 }
 
 /* Links in Text */
@@ -217,7 +234,7 @@ p a, p a:visited {
 }
 
 p a:hover, p a:active {
-    color: #FF5500;
+    color: #fff;
 }
 
 
@@ -229,7 +246,7 @@ p a:hover, p a:active {
 h1,
 h2,
 h3 {
-    color: #39383A;
+    color: #000;
     font-family: "metric",sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -237,13 +254,12 @@ h3 {
 
 h1 {
     margin: 0em;
-    line-height: 1.2em;
+    line-height: 1.1em;
     font-size: 4em;
 }
 
 /* Headers in text */
 h2 {
-
     font-size: 2em;
     margin-top: 1.8em;
     margin-bottom: -0.1em;
@@ -252,10 +268,29 @@ h2 {
 
 .breakout {
     background-color: #fff;
-    width: 50%;
-    margin: 0 auto;
-    padding: 7em 3em 7em 3em;
-    max-width: 1000px;
+    width: 100%;
+    margin: 3em auto;
+}
+
+.breakout--block {
+    background-color: #fff;
+    width: 40%;
+    margin: 1.2em auto;
+    padding: 2.2em 1.2em;
+    max-width: 1200px;
+}
+.big-quote, 
+.small-quote {
+    background: #fe0;
+}
+
+.big-quote p:first-child, 
+.small-quote p:first-child {
+  before: "“";
+}
+.big-quote p:last-child, 
+.small-quote p:last-child {
+  after: "”";
 }
 
 .introduction,
@@ -278,20 +313,19 @@ h2 {
 }
 
 .big-quote {
+    padding: 0.4em auto;
+    margin: 1.6em auto;
     color: #000;
-    font-size: 3.35em;
-    margin: 0em 0em 0.2em 0em;
-    line-height: 1em;
+    font-size: 3em;
+    line-height: 1.15em;
 }
 
 .small-quote {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    font-size: 32m;
-    line-height: 1.2em;
+    font-size: 1.9em;
+    line-height: 1.25em;
 }
 
-.author {
+.author-big {
     display: block;
     font-family: "metric-regular",sans-serif;
     /*font-style: normal;*/
@@ -300,31 +334,37 @@ h2 {
     font-size: 1.25em;
 }
 
-/* Facts in Text */
-.facts {
+.author-small {
+    display: block;
+    color: #B2B2B2;
+    font-size: 0.6em;
+}
+
+/* Box in Text */
+.box {
     text-align: center;
     background-color: #fff;
-    width: 250px;
-    padding: 1.4em;
-    margin: 2.8em;
+    width: 300px;
+    padding: 3.5em 3em;
+    margin: 2em 5em;
     font-family: "metric",sans-serif;
     font-weight: 600;
     color: #B2B2B2;
 }
 
-.facts .numbers {
+.box--numbers {
     display: block;
     font-size: 4em;
     margin-bottom: -0.05em;
     color: #000;
 }
 
-.facts .text {
+.box--text {
     display: block;
     text-align: center;
 }
 
-.box {
+.box--element {
     display: block;
     width: 100%;
     height: 300px;
@@ -332,7 +372,7 @@ h2 {
     padding-top: 2.4em;
 }
 
-.box:not(:last-child) {
+.box--element:not(:last-child) {
     border-bottom: 1px solid #E7E7E7;
 }
 
@@ -340,41 +380,38 @@ h2 {
     padding-bottom: 3em;
 }
 
-/* Quote in Text */
-.quote-text {
-    text-align: center;
-    background-color: #fff;
-    width: 300px;
-    padding: 1.9em 1.6em;
-    margin: 0em 2em;
-    font-family: "metric-bold",sans-serif;
-    /*font-style: normal;*/
-    font-weight: 600;
-    color: #2F2F2F;
-    font-size: 1.8em;
-    line-height: 1.4em;
-}
-
-.quote-text-author {
-    display: block;
-    color: #B2B2B2;
-    font-size: 0.6em;
-}
-
-
 .left {
     float: left;
-    margin-left: 20%;
+    margin-left: 18%;
 }
 
 .right {
     float: right;
-    margin-right: 0em;
+    margin-right: 18%;
 }
 
 .center {
     text-align: center;
+    margin: 0 auto;
 }
+
+/* Phone Element */
+.phone {
+    background: url(/img/phone-frame.png) 0 0 no-repeat;
+    width: 605px;
+    height: 1199px;
+    margin: 2em 4em 2em 15%;
+}
+
+.content {  
+    text-align: center;
+    height: 778px;
+    background-color: rgba(255,0,0,0.4);
+    margin: 141px 54px;
+    padding: 2em;
+}
+
+
 
 /* ==========================================================================
    Helper classes
