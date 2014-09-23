@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html,
-button,f
+button,
 input,
 select,
 textarea {
@@ -19,17 +19,18 @@ textarea {
 }
 
 html {
-    /*background-color: #fff;*/
-/*    background-color: #E0DEDA;
-*/
     font-family: "lemonde-journal",serif;
     font-style: normal;
-    font-weight: 400;
-
-    font-size: 1.5em;
+    font-weight: 300;
     line-height: 2;
-    
+    /*font-size: 25px;*/
+    -webkit-font-smoothing: antialiased;
     color: #464646;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -60,6 +61,7 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
 
 /*
  * Remove the gap between images, videos, audio and canvas and the bottom of
@@ -106,31 +108,20 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-header, footer {
-    background-color: #fff;
-    width: 100%;
-    height: 60px;
-}
-
-header {
-    border-bottom: #DBDBDB 1px solid;
-}
-
-footer {
-    border-top: #DBDBDB 1px solid;
-}
-
-.line {
-    width: 150px;
-    border-bottom: #000 1px solid;
-}
 
 .cover {
-
-    padding: 6em 0em 2em 0em;
+    width: 100%;
+    height: 1028px;
+    background: url(/img/Front-Comp@2x.png);
+    background-color: #D8D8D8;
+    background-size: cover;
+    display: inline-block;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;   
 }
 
-.story {
+/*.story {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
@@ -138,103 +129,58 @@ footer {
     box-sizing: border-box;
     padding: 0em 6.6em 0em 6.6em;
 }
+*/
 
-body {
-    color: #3a3a3a;
-}
-
-/* ==========================================================================
-   Grid
-   ========================================================================== */
-
-.main-experiences {
-
-    list-style: none;
-
-    /*display: -webkit-flex;*/
-    /*flex-flow: row;*/
-    /*justify-content: center;*/
-    align-items: center;
-
-
-    background-color: #fff;
-    /*background: #fe0;*/
-    /*width: 100%;*/
-    max-width: 1050px;
-    font-size: 0;
+.article-intro {
     margin: 0 auto;
+    max-width: 630px;
     text-align: center;
 }
 
-.main-experiences li {
+
+/* ==========================================================================
+   Button
+   ========================================================================== */
+
+a.button {
+    background-color: transparent;
+    color: #565656;
+    font-family: "Metric";
+    font-weight: 400;
     font-size: 25px;
-    vertical-align: top;
+    /*border: #acacac 1px solid;*/
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 27px 42px 22px 43px;
+    text-decoration: none;
 
-    /*-webkit-flex: 1;*/
-    width: 350px;
-    min-height: 350px;
-    box-sizing: border-box;
-    display: inline-block;
-
-    text-align: center;
-
-    border-left: #E3E3E3 1px solid;
-    border-bottom: #E3E3E3 1px solid;
-    
-    padding: 4em;
-    /*margin: auto;*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.main-experiences li:first-child {
-
-    border-left: none;
+a.button:hover {
+    /*background-color: #fff;*/
+    color: #000;
+    border-color: #565656;
 }
-
-.main-experiences li:last-child {
-
-    border-right: #E3E3E3 1px solid;
-}
-
-.main-experiences h2 {
-
-    font-size: 2.1em;
-    margin-bottom: 0.3em;
-    margin-top: -0.5em;
-}
-
 
 
 /* ==========================================================================
-   Lists
+   Colors
    ========================================================================== */
 
-li {
-    padding-bottom: 0.5em;
+.grey {
+    color: #969696;
+    /*opacity: 0.3;*/
 }
 
-/* ==========================================================================
-   Links
-   ========================================================================== */
-
-a, a:visited {
-    border-bottom: #000 1px solid;
-    color: #000;
-    text-decoration: none;
-}
-
-a:hover, a:active {
-    color: #fff;
-}
-
-/* Links in Text */
-p a, p a:visited {
-    border: none;
-    color: #000;
-    text-decoration: none;
-}
-
-p a:hover, p a:active {
-    color: #fff;
+.dark-grey {
+    color: #565656;
+    /*opacity: 0.6;*/
 }
 
 
@@ -242,175 +188,97 @@ p a:hover, p a:active {
    Typography
    ========================================================================== */
 
-
 h1,
 h2,
 h3 {
-    color: #000;
-    font-family: "metric",sans-serif;
-    font-style: normal;
-    font-weight: 600;
+    /*text-align: center;*/
 }
 
 h1 {
-    margin: 0em;
-    line-height: 1.1em;
-    font-size: 4em;
-}
-
-/* Headers in text */
-h2 {
-    font-size: 2em;
-    margin-top: 1.8em;
-    margin-bottom: -0.1em;
-    line-height: 1.2em;
-}
-
-.breakout {
-    background-color: #fff;
-    width: 100%;
-    margin: 3em auto;
-}
-
-.breakout--block {
-    background-color: #fff;
-    width: 40%;
-    margin: 1.2em auto;
-    padding: 2.2em 1.2em;
-    max-width: 1200px;
-}
-.big-quote, 
-.small-quote {
-    background: #fe0;
-}
-
-.big-quote p:first-child, 
-.small-quote p:first-child {
-  before: "“";
-}
-.big-quote p:last-child, 
-.small-quote p:last-child {
-  after: "”";
-}
-
-.introduction,
-.big-quote, 
-.small-quote {
-    font-family: "metric-bold",sans-serif;
-    font-weight: 600;
     color: #000;
+    font-family: "Metric";
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 0.93;
+    padding: 48px 20px 7px 20px; 
+    margin: 0;
 }
 
-.big-quote,
-.small-quote,
-.author {
-    text-align: center;
-}
-
-.introduction {
-    font-size: 1.2em;
-    line-height: 1.7em;
-}
-
-.big-quote {
-    padding: 0.4em auto;
-    margin: 1.6em auto;
+h3 {
     color: #000;
-    font-size: 3em;
-    line-height: 1.15em;
+    font-family: "Metric";
+    font-weight: 400;
+    font-size: 25px;
+    padding: 54px;
+    line-height: 1.1;
 }
 
-.small-quote {
-    font-size: 1.9em;
-    line-height: 1.25em;
-}
-
-.author-big {
+h3:after {
+    content: ' ';
     display: block;
-    font-family: "metric-regular",sans-serif;
-    /*font-style: normal;*/
-    font-weight: 600;
-    color: #B2B2B2;
-    font-size: 1.25em;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    width: 250px;
+    margin: 0 auto;
+    padding: 26px 0px;
 }
 
-.author-small {
-    display: block;
-    color: #B2B2B2;
-    font-size: 0.6em;
-}
 
-/* Box in Text */
-.box {
-    text-align: center;
-    background-color: #fff;
-    width: 300px;
-    padding: 3.5em 3em;
-    margin: 2em 5em;
-    font-family: "metric",sans-serif;
-    font-weight: 600;
-    color: #B2B2B2;
-}
-
-.box--numbers {
-    display: block;
-    font-size: 4em;
-    margin-bottom: -0.05em;
-    color: #000;
-}
-
-.box--text {
-    display: block;
+.center {
     text-align: center;
 }
 
-.box--element {
-    display: block;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    padding-top: 2.4em;
+p.intro {
+    color: #565656;
+    font-size: 25px;
+    line-height: 39px;
+    padding-bottom: 57px;
 }
 
-.box--element:not(:last-child) {
-    border-bottom: 1px solid #E7E7E7;
+.dot {
+    color: #373737;
+    font-size: 14px;
+    vertical-align: 2px;
 }
 
-.box img {
-    padding-bottom: 3em;
+.dot:before {
+    content: '\a0\a0';
 }
 
-.left {
-    float: left;
-    margin-left: 18%;
-}
-
-.right {
-    float: right;
-    margin-right: 18%;
+.dot:after {
+    content: '\a0\a0';
 }
 
 .center {
     text-align: center;
-    margin: 0 auto;
 }
 
-/* Phone Element */
-.phone {
-    background: url(/img/phone-frame.png) 0 0 no-repeat;
-    width: 605px;
-    height: 1199px;
-    margin: 2em 4em 2em 15%;
+/* ==========================================================================
+   Articles
+   ========================================================================== */
+
+.articles {
+    padding: 20px 130px;
+
 }
 
-.content {  
-    text-align: center;
-    height: 778px;
-    background-color: rgba(255,0,0,0.4);
-    margin: 141px 54px;
-    padding: 2em;
+article {
+    text-align: left;
+    max-width: 1170px;
+    border-bottom: 1px solid #D8D8D8;
+    padding: 0px 100px 124px 70px; 
+    margin: 100px 0;
 }
 
+article p {
+    max-width: 700px;
+}
+
+article h1 {
+    margin-bottom: -13px;
+
+    padding-left: 0;
+    margin-left: 0;
+}
 
 
 /* ==========================================================================
