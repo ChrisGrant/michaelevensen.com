@@ -23,9 +23,11 @@ html {
     font-style: normal;
     font-weight: 300;
     line-height: 2;
-    /*font-size: 25px;*/
-    -webkit-font-smoothing: antialiased;
     color: #464646;
+
+    /* Legibility */
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 body {
@@ -33,8 +35,13 @@ body {
     padding: 0;
 }
 
-a {
+a,
+a:visited {
     text-decoration: none;
+}
+
+a:hover {
+    color: #000;
 }
 
 /*
@@ -109,37 +116,44 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Header
    ========================================================================== */
 
 header {
     max-width: 1170px;
-    margin: 0 auto;
-
     color: #000;
     font-family: "Metric";
     font-weight: 400;
     font-size: 25px;
-
-    padding: 80px 134px;
-    line-height: 1.1;
+    margin: 0 auto;
 }
 
-header:after {
+/* Header Length */
+.short:after,
+.long:after {
     content: ' ';
-    display: block;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
-    padding: 26px 0px;
+    display: block;
+    padding-top: 25px;
 }
+
+.short:after {
+    width: 230px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
 
 footer {
     margin-top: 150px;
-    padding: 140px 0;
+    padding: 130px 0 60px 0;
     background-color: #D8D8D8;
     width: 100%;
 }
 
-.menu-footer {
+footer ul {
     font-family: "Metric";
     font-weight: 400;
     font-size: 22px;
@@ -147,48 +161,38 @@ footer {
     padding-top: 60px;
     margin: 140px auto 0 auto;
     text-align: center;
-    max-width: 960px;
+    max-width: 1170px;
 }
 
-.menu-footer .dot {
-    color: #969696;
-    padding: 16px;
-    /*margin: 0;*/
-}
-
-.menu-footer .dot:after {
-    content: ' '
-}
-
-.menu-footer .dot:before {
-    content: ' ';
-}
-
-.menu-footer li {
-    color: #969696;
-    padding: 0;
-    margin: 0;
+footer ul li {
     display: inline;
+    list-style-type: none;
 }
 
-.menu-footer a {
-    text-decoration: none;
-    color: #969696;
+footer .dot {
+    padding: 7px;
 }
 
-.menu-footer a:hover {
+footer ul li.current a {
     color: #000;
 }
 
-.cover {
+footer a {
+    color: #969696;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.hero {
     width: 100%;
-    height: 1028px;
+    height: 780px;
     background: url(/img/cover14.png) no-repeat;
     background-color: #D8D8D8;
     background-position: center;
     background-size: fill;
     display: inline-block;
-    /*position: absolute;*/
     top: 0;
     left: 0;   
 }
@@ -199,18 +203,14 @@ footer {
     margin: 0 auto;
     font-size: 24px;
     line-height: 1.7;
-
     color: #515151;
-
     box-sizing: border-box;
-    /*padding: 0em 6.6em 0em 6.6em;*/
 }
 
 .story a {
     text-decoration: none;
     padding-bottom: 3px;
     border-bottom: #000 1px solid;
-    /*border-spacing: 12px 12px;*/
     color: #333;
 }
 
@@ -219,18 +219,13 @@ footer {
     color: #000;
 }
 
-.article-intro {
-    margin: 0 auto;
-    max-width: 630px;
-    text-align: center;
-}
-
 
 /* ==========================================================================
    Buttons, Menu's and Links
    ========================================================================== */
 
-a.button {
+/* Text Buttons */
+.button {
     background-color: transparent;
     color: #565656;
     font-family: "Metric";
@@ -249,40 +244,21 @@ a.button {
     user-select: none;
 }
 
-a.button:hover {
-    background-color: #fff;
+.button:hover {
     color: #000;
     border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-a.menu-button {
-
-    color: #373737;
+/* Menu Button */
+.button-menu {
+    font-size: 22px;
     float: right;
-    text-decoration: none;
 }
 
-a.menu-button:before {
-
-    content: url(/img/burger.png);
-    margin-right: 12px;
-    font-size: 12px;  
+a.button-menu ,
+a.button-menu:visited {
+    color: #000;
 }
-
-/*a.menu-button:after {
-
-    content: '\a0\a0\a0▼';
-    font-size: 12px;  
-}*/
-
-.small {
-    font-family: "Metric";
-    font-weight: 400;
-    font-size: 25px;
-    color: #969696;
-    /*background-color: #ffe500;*/
-}
-
 
 /* ==========================================================================
    Colors
@@ -290,14 +266,11 @@ a.menu-button:before {
 
 .grey {
     color: #969696;
-    /*opacity: 0.3;*/
 }
 
 .dark-grey {
     color: #565656;
-    /*opacity: 0.6;*/
 }
-
 
 /* ==========================================================================
    Typography
@@ -305,24 +278,23 @@ a.menu-button:before {
 
 h1,
 h2,
-h3 {
-    /*text-align: center;*/
+h3,
+h4,
+blockquote {
     color: #000;
     font-family: "Metric";
 }
 
 h1 {
-    /*background-color: #ffe500;*/
     font-weight: 700;
     font-size: 100px;
     line-height: 0.93;
-    padding: 48px 20px 7px 20px; 
+    /*padding: 60px 20px 7px 20px;*/
     margin: 0;
 }
 
 h2 {
     font-size: 64px;
-    /*background-color: #ffe500;*/
     padding: 120px 0 0 0;
     margin: 0;
     line-height: 1;
@@ -330,67 +302,57 @@ h2 {
 
 h3 {
     font-weight: 400;
+    font-size: 22px;
+    padding-top: 54px;
+    margin: 0 auto 16px auto;
+}
+
+h4 {
+    font-weight: 400;
     font-size: 25px;
-    padding: 54px;
-    line-height: 1.1;
+    color: #969696;
+    margin-bottom: 20px;
 }
 
-h3:after {
-    content: ' ';
-    display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-    width: 250px;
-    margin: 0 auto;
-    padding: 26px 0px;
+blockquote {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1;
+    text-align: center;
 }
 
-/*.line {
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-    width: 250px;
-    height: 1px;
-    margin: 0 auto;
-    padding: 26px 0px;
+/* Chapter Intro */
+.chapter-intro {
+    width: 800px;
+    margin: 160px auto;
+    text-align: center;
+    /*background-color: #ffe500;*/
 }
-*/
+
+/* Alignment */
 .center {
     text-align: center;
 }
 
-p.intro {
-    color: #565656;
-    font-size: 25px;
-    line-height: 39px;
-    padding-bottom: 57px;
-}
-
 .dot {
-    color: #373737;
     font-size: 14px;
     vertical-align: 2px;
 }
 
-.dot:before {
-    content: '\a0';
-}
-
+.dot:before,
 .dot:after {
-    content: '\a0\a0\a0';
-}
-
-.center {
-    text-align: center;
+    content: '\a0\a0';
 }
 
 /* ==========================================================================
    Images & Figures
    ========================================================================== */
+
 figure {
     margin: 240px 0px 40px 0px;
     width: 100%;
     text-align: center;
     overflow: visible;
-
-    /*background-color: #ffe500;*/
 }
 
 figure div.photo {
@@ -413,26 +375,48 @@ figcaption {
    Articles
    ========================================================================== */
 
+.align-vertical  {
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+    height: auto;
+}
+
+.introduction {
+    margin: 0 auto;
+    max-width: 630px;
+    text-align: center;
+}
+
 .articles {
     padding: 20px 130px;
 }
 
-article {
-    text-align: left;
-    /*max-width: 1170px;*/
+.articles > article {
+    padding: 0px 100px 124px 70px;
     border-bottom: 1px solid #D8D8D8;
-    
-    padding: 0px 100px 124px 70px; 
+}
+
+article {
     margin: 100px 0;
 }
 
 article p {
     max-width: 700px;
+    color: #565656;
+    font-size: 25px;
+    line-height: 39px;
+    padding-bottom: 57px;
 }
 
 article h1 {
     margin-bottom: -13px;
-
     padding-left: 0;
     margin-left: 0;
 }

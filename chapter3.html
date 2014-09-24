@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="//cloud.webtype.com/css/61b5df10-c4ae-457a-a68e-03f952649242.css" rel="stylesheet" type="text/css" />
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <!-- Header -->
+        <header class="long">
+          
+          <h3>
+            Building SoundCloud <span class="dot">&bull;</span>
+            <span class="grey">The Listener</span>
+          </h3>
+
+          <a href="index.html" class="button-menu">Menu</a>
+
+        </header>
+
+
+        <div class="story">
+
+            <section class="the-listener">
+
+              <div class="chapter-intro">
+              
+                <h4>Chapter 3</h4>
+                <h1 class="intro">Prototypes & Pragmatic Design</h1>
+    
+                <hr>
+
+              </div>
+
+
+<p>With the start of the product process being very much open we needed to figure out a general approach as to how to structure the work effectively. Initially we would utilize flat sketches mostly done through Sketch App (more on that later) and wireframes, but for us to try out things quickly, we realized that we needed to open up the design process.</p>
+
+  <blockquote> A prototype is worth a thousand meetings.</blockquote>
+
+
+<p>Instead of talking around potential ideas, designs and hypotheticals we made a choice to make native prototypes. Through Xcode, and the newly updated Storyboards we managed to find an extremely rapid way of testing out big ideas. Me and Kasper working closely together. This gave us the possibility to paint broader strokes and try to circle in on a perimeter for what it was we were building. It also gave us the chance to get a feeling for the product, we could hold it in our hands, interact with gestures and show it to people to see how some of these ideas were being used. The prototypes helped us get a sense of direction, and through a series of elimination we managed to use these prototypes to figure out what we didn’t want, to eventually get to what we wanted. They became the center of discussion around where the product was going.</p>
+
+<p>Through countless iterations we managed to finally start identifying some of the key problems that we were facing, but we also started to outline some of the experiences and features that had potential. Finding these potential solutions required us to work our way through numerous alternatives. While some of the prototypes definitely proved to be interesting, they eventually had to be cut in order for us to focus on telling a strong narrative, and simplifying, rather than adding new functionality to some of the experiences.</p>
+
+
+
+
+<h2>Some of the prototypes that didn’t make it</h2>
+
+<h4>Example 1: Profiles as Radio Stations</h4>
+
+<p>One of the ideas we had was getting away from a fairly complicated first impression of a Stream (propegated by friends and profiles that you follow) and simplify the function of â€œjust getting startedâ€. We wanted users to be able to quickly find something interesting to play and not having to worry about administrating playback after that first tap. So instead of having a Stream made up of Playlists and Tracks, we thought: â€œWhat about having a selection of Profiles that you can play and not tracks?â€ This idea was rooted in the fact that profiles usually carry some sort of consistency when it comes to music and genre. What we thought was that it would be interesting to get some sort of Profile representation when a user updated their profile and added a new Track or Playlist to their Profile, instead of focusing just on that singular track.Â </p>
+
+<p>Part of this approach was also to solve for (what is still a problem today) the genre and music inconcistency while playing through the Stream, jumping from content from Profile to Profile which creates this disjoint experience in terms of genre consistency.Â </p>
+
+<h4>Example 2: Navigation</h4>
+
+<p>One of the elements that was an important part of our process was solving core Navigation. Our goal with the Navigation was to get it out of the way. What we wanted was to get away from things like a sidebar and standard Navigation patterns and focus purely on content. While we were highlighting more and bigger artwork, giving the canvas to the creators we wanted the core Navigation to interfere as little as possible with the content. Our goal was to let the content be the driver between the experiences and not a sidebar or having to go through a stack to Navigate to a different experience.</p>
+
+<h4>â€œThe Hubâ€</h4>
+
+<p>One of these approaches we branded â€œThe Hubâ€. Here the idea was that we would centralize all navigational aspects around one single point. Playback and playback control was an important part of the app and we thought about merging all â€œactionsâ€ into one place.Â </p>
+
+ <figure>
+
+
+              <figcaption>______</figcaption>
+
+            </figure>
+
+
+<h4>The use-case we were referencing was:Â </h4>
+
+<p>Iâ€™m listening to something on my phone while itâ€™s in my pocket. When I unlock it and go back to the app I want to do one of two things: A) Control playback through Next, Previous or Pause. B) Change the playback trajectory. Eg. change track or genre.</p>
+
+Our goal was therefore to include both these options into one point, almost like â€œfork in the roadâ€ where you could chose where you wanted to go.Â 
+
+<h4>Trio</h4>
+
+<p>As a continuation of the hub we wanted to boil navigation down to just three entry points. Based on our work with the other experiences, we had identified them as being: You (my own profile / content), Explore and Discover (find something new) and Search. Our suggestion was that we would rely on a top-heavy navigation that served the three entry main entry points in the app. Simplifying and elliminating the need for a â€œone size fits allâ€ navigation structure. This type of navigation also helped be brutally simple about the extent of what the app was about and helped clarifying to users both new and old what this app was all about.</p>
+
+ <figure>
+
+
+              <figcaption>______</figcaption>
+
+            </figure>
+
+
+<h4>Example 3: Integrating the Player</h4>
+
+<p>One problem we had been continously struggling with was integrating access to the Player, meaning going in and out of the Playback experience.</p>
+
+
+
+
+            </section>
+
+
+            </div>
+
+
+           <!-- Footer -->
+            <footer>
+
+                <article class="introduction">
+
+                  <h4>Chapter 4</h4>
+                  <h1>_____</h1>
+
+                  <p>
+                      _____
+                  </p>
+
+                  <a href="chapter4.html" class="button">Continue to next chapter</a>
+              
+              </article>
+
+
+              <!-- Chapter Navigation -->
+              <ul>
+                  <li><a href="chapter1.html">1. _____</a><span class="dot grey">&bull;</span></li>
+                  <li><a href="chapter2.html">2. _____</a><span class="dot grey">&bull;</span></li>
+                  <li class="current"><a href="chapter3.html">3. _____</a><span class="dot grey">&bull;</span></li>
+                  <li><a href="chapter4.html">4. _____</a><span class="dot grey">&bull;</span></li>
+                  <li><a href="chapter5.html">5. _____</a></li>
+              </ul>
+
+            </footer>
+
+            <!-- Footer End -->
+
+          
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Typekit -->
+        <script src="//use.typekit.net/chm0gsc.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+
+        <!-- Google Analytics -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-27277864-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+    </body>
+</html>
