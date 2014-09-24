@@ -33,6 +33,10 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -57,11 +61,11 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
     padding: 0;
+    margin: 40px auto 94px auto;
+    width: 250px;
 }
-
 
 /*
  * Remove the gap between images, videos, audio and canvas and the bottom of
@@ -109,10 +113,6 @@ textarea {
    ========================================================================== */
 
 header {
-
-    /*background-color: #ffe500;*/
-    /*height: 158px;*/
-
     max-width: 1170px;
     margin: 0 auto;
 
@@ -123,9 +123,8 @@ header {
 
     padding: 80px 134px;
     line-height: 1.1;
-
-    /*text-align: center;*/
 }
+
 header:after {
     content: ' ';
     display: block;
@@ -133,6 +132,53 @@ header:after {
     padding: 26px 0px;
 }
 
+footer {
+    margin-top: 150px;
+    padding: 140px 0;
+    background-color: #D8D8D8;
+    width: 100%;
+}
+
+.menu-footer {
+    font-family: "Metric";
+    font-weight: 400;
+    font-size: 22px;
+    border-top: rgba(0, 0, 0, 0.1) 1px solid;
+    padding-top: 60px;
+    margin: 140px auto 0 auto;
+    text-align: center;
+    max-width: 960px;
+}
+
+.menu-footer .dot {
+    color: #969696;
+    padding: 16px;
+    /*margin: 0;*/
+}
+
+.menu-footer .dot:after {
+    content: ' '
+}
+
+.menu-footer .dot:before {
+    content: ' ';
+}
+
+.menu-footer li {
+    color: #969696;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.menu-footer a {
+    text-decoration: none;
+    color: #969696;
+}
+
+.menu-footer a:hover {
+    color: #000;
+}
 
 .cover {
     width: 100%;
@@ -149,10 +195,10 @@ header:after {
 
 .story {
     width: 100%;
-    max-width: 900px;
+    max-width: 840px;
     margin: 0 auto;
-    font-size: 25px;
-    line-height: 1.8;
+    font-size: 24px;
+    line-height: 1.7;
 
     color: #515151;
 
@@ -216,11 +262,26 @@ a.menu-button {
     text-decoration: none;
 }
 
+a.menu-button:before {
+
+    content: url(/img/burger.png);
+    margin-right: 12px;
+    font-size: 12px;  
+}
+
 /*a.menu-button:after {
 
     content: '\a0\a0\a0▼';
     font-size: 12px;  
 }*/
+
+.small {
+    font-family: "Metric";
+    font-weight: 400;
+    font-size: 25px;
+    color: #969696;
+    /*background-color: #ffe500;*/
+}
 
 
 /* ==========================================================================
@@ -246,11 +307,12 @@ h1,
 h2,
 h3 {
     /*text-align: center;*/
+    color: #000;
+    font-family: "Metric";
 }
 
 h1 {
-    color: #000;
-    font-family: "Metric";
+    /*background-color: #ffe500;*/
     font-weight: 700;
     font-size: 100px;
     line-height: 0.93;
@@ -258,9 +320,15 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 64px;
+    /*background-color: #ffe500;*/
+    padding: 120px 0 0 0;
+    margin: 0;
+    line-height: 1;
+}
+
 h3 {
-    color: #000;
-    font-family: "Metric";
     font-weight: 400;
     font-size: 25px;
     padding: 54px;
@@ -276,6 +344,14 @@ h3:after {
     padding: 26px 0px;
 }
 
+/*.line {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    width: 250px;
+    height: 1px;
+    margin: 0 auto;
+    padding: 26px 0px;
+}
+*/
 .center {
     text-align: center;
 }
@@ -303,6 +379,34 @@ p.intro {
 
 .center {
     text-align: center;
+}
+
+/* ==========================================================================
+   Images & Figures
+   ========================================================================== */
+figure {
+    margin: 240px 0px 40px 0px;
+    width: 100%;
+    text-align: center;
+    overflow: visible;
+
+    /*background-color: #ffe500;*/
+}
+
+figure div.photo {
+    background-color: #D8D8D8;
+}
+
+figure img {
+    max-width: 100%;
+    margin-top: -60px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 40px;
 }
 
 /* ==========================================================================
