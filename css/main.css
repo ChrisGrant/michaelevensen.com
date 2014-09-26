@@ -1,0 +1,614 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #9B9B9B;
+}
+
+html {
+    font-family: "lemonde-journal",serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2;
+    color: #464646;
+
+    /* Legibility */
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4c;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 0;
+    margin: 40px auto 94px auto;
+    width: 250px;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+    max-width: 1170px;
+    color: #000;
+    font-family: "Metric";
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+/* Header Length */
+.short:after,
+.long:after {
+    content: ' ';
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    display: block;
+    padding-top: 25px;
+}
+
+.short:after {
+    width: 230px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+    margin-top: 150px;
+    padding: 130px 0 60px 0;
+    background-color: #D8D8D8;
+    width: 100%;
+}
+
+footer ul {
+    font-family: "Metric";
+    font-weight: 400;
+    font-size: 22px;
+    border-top: rgba(0, 0, 0, 0.1) 1px solid;
+    padding-top: 60px;
+    margin: 140px auto 0 auto;
+    text-align: center;
+    max-width: 1170px;
+}
+
+footer ul li {
+    display: inline;
+    list-style-type: none;
+}
+
+footer .dot {
+    padding: 7px;
+}
+
+footer ul li.current a {
+    color: #000;
+}
+
+footer a {
+    color: #969696;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.hero {
+    width: 100%;
+    height: 780px;
+    background: url(/img/cover14.png) no-repeat;
+    background-color: #D8D8D8;
+    background-position: center;
+    background-size: fill;
+    display: inline-block;
+    top: 0;
+    left: 0;   
+}
+
+.story {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #515151;
+    box-sizing: border-box;
+}
+
+.story a {
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: #000 1px solid;
+    color: #333;
+}
+
+.story a:hover {
+    border: none;
+    color: #000;
+}
+
+
+/* ==========================================================================
+   Buttons, Menu's and Links
+   ========================================================================== */
+
+/* Text Buttons */
+.button {
+    background-color: transparent;
+    color: #565656;
+    font-family: "Metric";
+    font-weight: 400;
+    font-size: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 27px 42px 22px 43px;
+    text-decoration: none;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button:hover {
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+/* Menu Button */
+.button-menu {
+    font-size: 22px;
+    float: right;
+}
+
+a.button-menu ,
+a.button-menu:visited {
+    color: #000;
+}
+
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+.grey {
+    color: #969696;
+}
+
+.dark-grey {
+    color: #565656;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+blockquote {
+    color: #000;
+    font-family: "Metric";
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 0.93;
+    /*padding: 60px 20px 7px 20px;*/
+    margin: 0;
+}
+
+h2 {
+    font-size: 64px;
+    padding: 120px 0 0 0;
+    margin: 0;
+    line-height: 1;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 22px;
+    padding-top: 54px;
+    margin: 0 auto 16px auto;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 25px;
+    color: #969696;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1;
+    text-align: center;
+}
+
+/* Chapter Intro */
+.chapter-intro {
+    width: 800px;
+    margin: 160px auto;
+    text-align: center;
+    /*background-color: #ffe500;*/
+}
+
+/* Alignment */
+.center {
+    text-align: center;
+}
+
+.dot {
+    font-size: 14px;
+    vertical-align: 2px;
+}
+
+.dot:before,
+.dot:after {
+    content: '\a0\a0';
+}
+
+/* ==========================================================================
+   Images & Figures
+   ========================================================================== */
+
+figure {
+    margin: 240px 0px 40px 0px;
+    width: 100%;
+    text-align: center;
+    overflow: visible;
+}
+
+figure div.photo {
+    background-color: #D8D8D8;
+}
+
+figure img {
+    max-width: 100%;
+    margin-top: -60px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+/* ==========================================================================
+   Articles
+   ========================================================================== */
+
+.align-vertical  {
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+    height: auto;
+}
+
+.introduction {
+    margin: 0 auto;
+    max-width: 630px;
+    text-align: center;
+}
+
+.articles {
+    padding: 20px 130px;
+}
+
+.articles > article {
+    padding: 0px 100px 124px 70px;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+article {
+    margin: 100px 0;
+}
+
+article p {
+    max-width: 700px;
+    color: #565656;
+    font-size: 25px;
+    line-height: 39px;
+    padding-bottom: 57px;
+}
+
+article h1 {
+    margin-bottom: -13px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-device-width: 480px) {
+  
+    
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
