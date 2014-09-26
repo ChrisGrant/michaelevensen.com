@@ -8,11 +8,10 @@ class CaseAdmin(admin.ModelAdmin):
 	prepopulated_fields = {"slug": ("title",)}
 
 class ChapterAdmin(SummernoteModelAdmin):
-    # form = ChapterForm
     list_display = ( 'title', 'case', 'id' )
     prepopulated_fields = {"slug": ("title",)}
 
-class ArticleAdmin(admin.ModelAdmin):
+class ArticleAdmin(SummernoteModelAdmin):
 	list_display = ( 'title', 'slug', 'id' )
 	prepopulated_fields = {"slug": ("title",)}
 

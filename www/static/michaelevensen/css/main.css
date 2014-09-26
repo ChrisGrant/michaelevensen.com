@@ -120,12 +120,19 @@ textarea {
    ========================================================================== */
 
 header {
+    background-color: #ffe500;
     max-width: 1170px;
     color: #000;
     font-family: "Metric";
     font-weight: 400;
     font-size: 25px;
     margin: 0 auto;
+    padding-top: 74px;
+}
+
+header h3 {
+    padding: 0;
+    margin: 0;
 }
 
 /* Header Length */
@@ -134,12 +141,23 @@ header {
     content: ' ';
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     display: block;
-    padding-top: 25px;
 }
+
+header,
+.short:after,
+.long:after {
+    height: 84px;
+}
+
 
 .short:after {
     width: 230px;
     margin: 0 auto;
+}
+
+header li,
+footer li  {
+    list-style-type: none;
 }
 
 /* ==========================================================================
@@ -164,16 +182,15 @@ footer ul {
     max-width: 1170px;
 }
 
-footer ul li {
+footer li {
     display: inline;
-    list-style-type: none;
 }
 
 footer .dot {
     padding: 7px;
 }
 
-footer ul li.current a {
+footer li.current a {
     color: #000;
 }
 
@@ -250,13 +267,13 @@ footer a {
 }
 
 /* Menu Button */
-.button-menu {
+.menu-button {
     font-size: 22px;
     background-color: #ffe500;
 }
 
-a.button-menu ,
-a.button-menu:visited {
+a.menu-button ,
+a.menu-button:visited {
     color: #000;
 }
 
@@ -300,11 +317,10 @@ h2 {
 }
 
 h3 {
-   float: left;
     font-weight: 400;
     font-size: 22px;
     padding-top: 54px;
-    /*margin: 0 auto 16px auto;*/
+    margin: 0 auto 16px auto;
     background-color: #ffe500;
 }
 
