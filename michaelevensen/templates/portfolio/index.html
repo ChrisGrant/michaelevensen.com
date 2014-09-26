@@ -1,0 +1,67 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+
+        <!-- Hero -->
+        <div class="hero">
+
+
+        <!-- Header -->
+          <header class="center short">
+          
+            <h3>
+              Michael Nino Evensen <span class="dot">&bull;</span>
+                <span class="grey">Product Designer & Developer</span>
+            </h3>
+          </header>
+
+          
+      {% for case in cases %}
+
+        <!-- {{ case.title }} -->
+        <div class="align-vertical">
+
+          <article class="introduction">
+
+              <h1>{{ case.title|safe }}</h1>
+              <p>{{ case.intro|safe }}</p>
+
+              <a href="/{{ case.slug }}/{{ case.first }}/" class="button">{{ case.link_text }}</a>
+   
+          </article>
+
+        </div>
+
+        </div>
+
+
+        {% endfor %}
+
+        <!-- Hero End -->
+
+
+        <!-- Articles -->
+        <div class="articles">
+
+
+        {% for article in articles %}
+
+          <!-- {{ article.title }} -->
+            <article>
+              <h1>{{ article.title|safe }}</h1>
+
+               <p>
+                  {{ article.introduction|safe }}
+                
+                </p>
+              <a href="/{{ article.slug }}/" class="button">{{ article.link_text }}</a>
+
+            </article>
+
+          {% endfor %}
+
+
+        </div>
+          
+
+{% endblock %}
