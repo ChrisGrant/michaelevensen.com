@@ -3,18 +3,21 @@
 {% block content %}
 
         <!-- Chapter Header -->
-        <header class="long">
+        <header class="chapter-header">
         
-            <h3 class="left">
+            <li class="left">
               {{ current_chapter.case }}<span class="dot">&bull;</span>
               <span class="grey">{{ current_chapter.title }}</span>
-            </h3>
+            </li>
           
+            <li class="right">
               <a href="/" class="right menu-button">Menu</a>
+            </li>
 
         </header>
 
 
+        <!-- Story Start -->
         <div class="story">
 
               <div class="chapter-intro">

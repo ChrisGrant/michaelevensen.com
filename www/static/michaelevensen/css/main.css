@@ -120,39 +120,18 @@ textarea {
    ========================================================================== */
 
 header {
-    background-color: #ffe500;
     max-width: 1170px;
     color: #000;
     font-family: "Metric";
     font-weight: 400;
-    font-size: 25px;
+    font-size: 22px;
     margin: 0 auto;
-    padding-top: 74px;
+    height: 90px;
+    padding-top: 70px;
 }
 
-header h3 {
-    padding: 0;
-    margin: 0;
-}
-
-/* Header Length */
-.short:after,
-.long:after {
-    content: ' ';
+header.chapter-header {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
-    display: block;
-}
-
-header,
-.short:after,
-.long:after {
-    height: 84px;
-}
-
-
-.short:after {
-    width: 230px;
-    margin: 0 auto;
 }
 
 header li,
@@ -211,7 +190,7 @@ footer a {
     background-size: fill;
     display: inline-block;
     top: 0;
-    left: 0;   
+    left: 0;
 }
 
 .story {
@@ -269,7 +248,6 @@ footer a {
 /* Menu Button */
 .menu-button {
     font-size: 22px;
-    background-color: #ffe500;
 }
 
 a.menu-button ,
@@ -316,13 +294,14 @@ h2 {
     line-height: 1;
 }
 
-h3 {
+/* For headers */
+/*h3 {
     font-weight: 400;
     font-size: 22px;
-    padding-top: 54px;
-    margin: 0 auto 16px auto;
-    background-color: #ffe500;
-}
+
+   padding-top: 54px;
+    margin: 0 auto 16px auto; 
+}*/
 
 h4 {
     font-weight: 400;
