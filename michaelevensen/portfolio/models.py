@@ -3,7 +3,7 @@ from django.db import models
 # case
 class Case(models.Model):
 	title = models.CharField('Title', max_length=200)
-	introduction = models.TextField('Introduction', blank=False, max_length=200)
+	introduction = models.CharField('Introduction', blank=False, max_length=400)
 	link_text = models.CharField('Link Text', max_length=200)
 	slug = models.SlugField()
 	image = models.FileField('Image', upload_to='media/', blank=True, null=True)
@@ -17,7 +17,7 @@ class Case(models.Model):
 # chapters
 class Chapter(models.Model):
 	title = models.CharField('Title', max_length=200)
-	introduction = models.TextField('Introduction', blank=False, max_length=200)
+	introduction = models.CharField('Introduction', blank=False, max_length=400)
 	body = models.TextField('Body Text', blank=True)
 	slug = models.SlugField()
 	case = models.ForeignKey(Case, verbose_name="Associated Case")
@@ -31,7 +31,7 @@ class Chapter(models.Model):
 # article
 class Article(models.Model):
 	title = models.CharField(max_length=200)
-	introduction = models.TextField('Introduction', blank=False)
+	introduction = models.CharField('Introduction', blank=False, max_length=400)
 	body = models.TextField('Body Text', blank=True)
 	link_text = models.CharField('Link Text', max_length=200)
 	slug = models.SlugField()

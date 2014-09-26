@@ -1,22 +1,14 @@
 from django import forms
 from django.contrib import admin
 from portfolio.models import Case, Chapter, Article
-# from django_summernote.admin import SummernoteModelAdmin
-from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
+from django_summernote.admin import SummernoteModelAdmin
 
 class CaseAdmin(admin.ModelAdmin):
 	list_display = ( 'title', 'slug' )
 	prepopulated_fields = {"slug": ("title",)}
 
-class ChapterForm(forms.ModelForm):
-    body = forms.CharField( widget=SummernoteInplaceWidget() )
-
-    class Meta:
-    	model = Chapter
-        fields = ['title', 'introduction', 'body', 'slug', 'case']
-
-class ChapterAdmin(admin.ModelAdmin):
-    form = ChapterForm
+class ChapterAdmin(SummernoteModelAdmin):
+    # form = ChapterForm
     list_display = ( 'title', 'case', 'id' )
     prepopulated_fields = {"slug": ("title",)}
 
