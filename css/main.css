@@ -120,12 +120,22 @@ textarea {
    ========================================================================== */
 
 header {
+    background-color: #ffe500;
     max-width: 1170px;
     color: #000;
     font-family: "Metric";
     font-weight: 400;
     font-size: 25px;
     margin: 0 auto;
+<<<<<<< HEAD:css/main.css
+=======
+    padding-top: 74px;
+}
+
+header h3 {
+    padding: 0;
+    margin: 0;
+>>>>>>> parent of ee8cb83... Latest local commit:www/static/michaelevensen/css/main.css
 }
 
 /* Header Length */
@@ -134,7 +144,22 @@ header {
     content: ' ';
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     display: block;
+<<<<<<< HEAD:css/main.css
     padding-top: 25px;
+=======
+}
+
+header,
+.short:after,
+.long:after {
+    height: 84px;
+}
+
+
+.short:after {
+    width: 230px;
+    margin: 0 auto;
+>>>>>>> parent of ee8cb83... Latest local commit:www/static/michaelevensen/css/main.css
 }
 
 .short:after {
@@ -252,7 +277,11 @@ footer a {
 /* Menu Button */
 .button-menu {
     font-size: 22px;
+<<<<<<< HEAD:css/main.css
     float: right;
+=======
+    background-color: #ffe500;
+>>>>>>> parent of ee8cb83... Latest local commit:www/static/michaelevensen/css/main.css
 }
 
 a.button-menu ,
@@ -305,6 +334,10 @@ h3 {
     font-size: 22px;
     padding-top: 54px;
     margin: 0 auto 16px auto;
+<<<<<<< HEAD:css/main.css
+=======
+    background-color: #ffe500;
+>>>>>>> parent of ee8cb83... Latest local commit:www/static/michaelevensen/css/main.css
 }
 
 h4 {
